@@ -14,12 +14,12 @@ Post.belongsTo(User, {
 });
 
 User.belongsToMany(Post, {
-  foreignKey: 'user_id',
+  through: 'user_id',
   onDelete: 'SET NULL'
 });
 
 Post.belongsToMany(User, {
-  foreignKey: 'post_id',
+  through: 'post_id',
   onDelete: 'SET NULL'
 });
 

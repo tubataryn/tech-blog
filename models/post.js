@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 // create our Post model
-/*class Post extends Model {
+class Post extends Model {
   static user(body, models) {
     return models.user.create({
       user_id: body.user_id,
@@ -31,7 +31,7 @@ const sequelize = require('../config/connection');
       });
     });
   }
-}*/
+}
 
 // create fields/columns for Post model
 Post.init(
